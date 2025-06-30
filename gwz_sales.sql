@@ -1,7 +1,7 @@
 SELECT 
   sales.id AS sales_id,
   sales.date AS sales_date,
-  sales.amount AS sales_amount,
+  ROUND(sales.amount,2) AS sales_amount,
   customers.name AS customer_name,
   products.name AS product_name
 FROM `gwz_sales.sales` AS sales
